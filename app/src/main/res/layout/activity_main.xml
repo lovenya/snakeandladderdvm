@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Ladder"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Green:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="82dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="3dp"
+        android:hapticFeedbackEnabled="true"
+        android:text="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/dice_roll"
+        app:layout_constraintTop_toTopOf="@+id/dice_roll" />
+
+    <Button
+        android:id="@+id/dice_roll"
+        android:layout_width="205dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="3dp"
+        android:hapticFeedbackEnabled="true"
+        android:text="Roll Dice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dice_roll"
+        app:srcCompat="@drawable/dice_1" />
+
+    <androidx.gridlayout.widget.GridLayout
+
+        android:id="@+id/gridLayout"
+        android:layout_width="408dp"
+        android:layout_height="576dp"
+        app:columnCount="6"
+        app:layout_constraintBottom_toTopOf="@+id/dice_roll"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rowCount="6">
+
+        <Button
+            android:id="@+id/ij36"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="36"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ij35"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="35"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ij34"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="34"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ij33"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:hapticFeedbackEnabled="true"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+
+            android:text="33"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ij32"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="32"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ij31"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="31"
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/ij25"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="25"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/ij26"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="26"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/ij27"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="27"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/ij28"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+
+
+            android:text="28"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/ij29"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="29"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/ij30"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="30"
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/ij24"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="24"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/ij23"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="23"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/ij22"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="22"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/ij21"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="21"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/ij20"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="20"
+            app:layout_column="4"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/ij19"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="19"
+            app:layout_column="5"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/ij13"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="13"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/ij14"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="14"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/ij15"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="15"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/ij16"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="16"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/ij17"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="17"
+            app:layout_column="4"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/ij18"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="18"
+            app:layout_column="5"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/ij12"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="12"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/ij11"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="11"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/ij10"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="10"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/ij9"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="9"
+            app:layout_column="3"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/ij8"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="8"
+            app:layout_column="4"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/ij7"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="7"
+            app:layout_column="5"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/ij1"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="1"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/ij2"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="2"
+            app:layout_column="1"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/ij3"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="3"
+            app:layout_column="2"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/ij4"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="4"
+            app:layout_column="3"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/ij5"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="5"
+            app:layout_column="4"
+            app:layout_row="5" />
+
+        <Button
+            android:id="@+id/ij6"
+            android:layout_width="68dp"
+            android:layout_height="96dp"
+            android:insetLeft="3dp"
+            android:insetRight="3dp"
+            android:text="6"
+            app:layout_column="5"
+            app:layout_row="5" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/testText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="Roll the Dice"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:text="Red:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_default="percent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Snake"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
